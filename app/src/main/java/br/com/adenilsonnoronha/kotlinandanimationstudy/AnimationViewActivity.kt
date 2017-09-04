@@ -20,9 +20,9 @@ class AnimationViewActivity : AppCompatActivity() {
     }
 
     private fun configureAnimationSet() {
-        val alphaAnimation = AnimationUtils.getAlphaAnimation(1f, 0f)
-        val downAnimationTranslate = AnimationUtils.getTranslateAnimation(0f, 0f, 0f, 8f)
-        val animationSet = AnimationUtils.createSetAnimation(animations = *arrayOf(alphaAnimation, downAnimationTranslate))
+        val alphaAnimation = AnimationViewUtil.getAlphaAnimation(1f, 0f)
+        val downAnimationTranslate = AnimationViewUtil.getTranslateAnimation(0f, 0f, 0f, 8f)
+        val animationSet = AnimationViewUtil.createSetAnimation(animations = *arrayOf(alphaAnimation, downAnimationTranslate))
 
         buttonAnimationSet.setOnClickListener({
             buttonAnimationSet.startAnimation(animationSet)
@@ -32,19 +32,19 @@ class AnimationViewActivity : AppCompatActivity() {
 
     private fun configureFillAfter() {
         buttonFillAfter.setOnClickListener({
-            val animation: Animation = if (isOnBottom) AnimationUtils.getTranslateAnimation(0f, 0f, 8f, 0f, 1500, BounceInterpolator(),
+            val animation: Animation = if (isOnBottom) AnimationViewUtil.getTranslateAnimation(0f, 0f, 8f, 0f, 1500, BounceInterpolator(),
                     true)
-            else AnimationUtils.getTranslateAnimation(0f, 0f, 0f, 8f, 1500, BounceInterpolator(), true)
+            else AnimationViewUtil.getTranslateAnimation(0f, 0f, 0f, 8f, 1500, BounceInterpolator(), true)
             buttonFillAfter.startAnimation(animation)
             isOnBottom = !isOnBottom
         })
     }
 
     private fun configureNoFillAfter() {
-        val downAnimationTranslate = AnimationUtils.getTranslateAnimation(0f, 0f, 0f, 8f)
+        val downAnimationTranslate = AnimationViewUtil.getTranslateAnimation(0f, 0f, 0f, 8f)
 
-        buttonNoFillAfter.setOnClickListener({
-            buttonNoFillAfter.startAnimation(downAnimationTranslate)
+        buttonTranslateX.setOnClickListener({
+            buttonTranslateX.startAnimation(downAnimationTranslate)
         })
     }
 

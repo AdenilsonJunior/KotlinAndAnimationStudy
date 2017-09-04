@@ -8,7 +8,7 @@
     tools:context="br.com.adenilsonnoronha.kotlinandanimationstudy.AnimationViewActivity">
 
     <Button
-        android:id="@+id/buttonNoFillAfter"
+        android:id="@+id/buttonTranslateX"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -30,7 +30,7 @@
         android:layout_marginTop="16dp"
         android:text="Fill after"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/buttonNoFillAfter"
+        app:layout_constraintLeft_toRightOf="@+id/buttonTranslateX"
         app:layout_constraintRight_toLeftOf="@+id/buttonAnimationSet"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"/>

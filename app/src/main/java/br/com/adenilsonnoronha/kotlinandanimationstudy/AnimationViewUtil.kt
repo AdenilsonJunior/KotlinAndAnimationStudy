@@ -6,7 +6,7 @@ import android.view.animation.*
  * @author adenilsonnoronha<noronha.adenilson@gmail.com>
  * @since 08/29/2017
  */
-class AnimationUtils {
+class AnimationViewUtil {
     companion object {
         fun getTranslateAnimation(byX: Float, toX: Float, byY: Float, toY: Float, duration: Long = 1000, interpolator: Interpolator =
         LinearInterpolator(), fillAfter: Boolean = false): TranslateAnimation {

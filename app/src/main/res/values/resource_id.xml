@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="KEY_ORIGINAL_POSITION_X" type="id"/>
+    <item name="KEY_ORIGINAL_POSITION_Y" type="id"/>
+    <item name="KEY_TO_POSITION_X" type="id"/>
+    <item name="KEY_TO_POSITION_Y" type="id"/>
+</resources>

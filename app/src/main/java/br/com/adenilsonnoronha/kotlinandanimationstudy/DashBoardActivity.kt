@@ -15,9 +15,16 @@ class DashBoardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val intent = Intent(this, AnimationViewActivity::class.java)
         buttonAnimationView.setOnClickListener({
-            startActivity(intent)
+            startActivity(Intent(this, AnimationViewActivity::class.java))
+        })
+
+        buttonObjectAnimator.setOnClickListener({
+            startActivity(Intent(this, ObjectAnimatorActivity::class.java))
+        })
+
+        buttonValueAnimator.setOnClickListener({
+            startActivity(Intent(this, ValueAnimatorActivity::class.java))
         })
 
     }
